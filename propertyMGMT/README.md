@@ -81,11 +81,38 @@ npm start
 
 ### Property Management
 
-- `POST /api/property` - Create a new property
-- `GET /api/property/:id` - Get property by ID
-- `PUT /api/property/:id` - Update property
-- `DELETE /api/property/:id` - Delete property
-- `GET /api/properties` - List properties (with pagination and filtering)
+
+`For table Clear_Property_details(Residential)`
+
+- `POST http://localhost:PORT/api/property/property/` - Create a new property
+- `GET http://localhost:PORT/api/property/property/id` - Get property by ID
+- `PUT http://localhost:PORT/api/property/property/id` - Update property
+- `DELETE http://localhost:PORT/api/property/property/id` - Delete property
+
+
+`For table Clear_Property(Residential)`
+
+- `POST http://localhost:PORT/api/clear-property/` - Create a new property
+- `GET http://localhost:PORT/api/clear-property/id` - Get property by ID
+- `PUT http://localhost:PORT/api/clear-property/id` - Update property
+- `DELETE http://localhost:PORT/api/clear-property/id` - Delete property
+
+`For table Clear_Com_Property_Detail(Commercial)`
+
+- `POST http://localhost:PORT/api/commercial-property/commercial-property/` - Create a new property
+- `GET http://localhost:PORT/api/commercial-property/commercial-property/id` - Get property by ID
+- `PUT http://localhost:PORT/api/commercial-property/commercial-property/id` - Update property
+- `DELETE http://localhost:PORT/api/commercial-property/commercial-property/id` - Delete property
+
+`For table Clear_Com_Property(Commercial)`
+
+- `POST http://localhost:3002/api/commercial-property-main/commercial-property-main/` - Create a new property
+- `GET http://localhost:3002/api/commercial-property-main/commercial-property-main/id` - Get property by ID
+- `PUT http://localhost:3002/api/commercial-property-main/commercial-property-main/id` - Update property
+- `DELETE http://localhost:3002/api/commercial-property-main/commercial-property-main/id` - Delete property
+
+
+
 
 ## Testing
 
