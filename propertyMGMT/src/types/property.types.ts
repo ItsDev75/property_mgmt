@@ -1,0 +1,117 @@
+export interface IClearPropertyDetail {
+  id?: number;
+  property_id: number;
+  call_us: string;
+  exe_name: string;
+  exe_email: string;
+  exe_contact_no: string;
+  exe_address: string;
+  owner_name: string;
+  owner_email: string;
+  owner_contact_no: string;
+  owner_address: string;
+  pro_curr_status: string;
+  prop_avail: string;
+  permi_avail: string;
+  project_unit: string;
+  floor_loc: string;
+  prop_ownership: string;
+  flooring_type: string;
+  facing: string;
+  no_of_lift: string;
+  no_of_bedrooms: string;
+  no_of_bathrooms: string;
+  no_of_balconies: string;
+  no_of_open_sides: string;
+  kitchen_detail: string;
+  furniture_detail: string;
+  age_of_property: string;
+  power_supply: string;
+  security_guards: string;
+  camera: string;
+  fire_avai: string;
+  water_supply: string;
+  water_timing: string;
+  road_width: string;
+  parking_detail: string;
+  gas_supply: string;
+  amenities: string;
+  otheramenities: string;
+  client_avail: string;
+  overlooking: string;
+  some_features: string;
+  wardrobe: string;
+  beds: string;
+  fans: string;
+  light: string;
+  m_kitchen: string;
+  fridge: string;
+  ac: string;
+  geyser: string;
+  tv: string;
+  stove: string;
+  washing_machine: string;
+  water_purifier: string;
+  microwave: string;
+  curtains: string;
+  chimney: string;
+  exhaust_fan: string;
+  sofa: string;
+  dinning_table: string;
+  super_plot_area: string;
+  super_plot_area_unit: string;
+  super_con_area: string;
+  super_con_area_unit: string;
+  carpet_plot_area: string;
+  carpet_plot_area_unit: string;
+  carpet_con_area: string;
+  carpet_con_area_unit: string;
+  offer_price: number;
+  offer_price_unit: string;
+  expected_rent: string;
+  expected_rent_unit: string;
+  rent_security: string;
+  rent_security_unit: string;
+  maint_charge: string;
+  maint_charge_unit: string;
+  tax_charge: string;
+  tax_charge_unit: string;
+  other_charge: string;
+  google_map: string;
+  school: string;
+  college: string;
+  hospital: string;
+  bank: string;
+  brts_stop: string;
+  r_station: string;
+  m_station: string;
+  airport: string;
+  brochure: string;
+  post_date: Date;
+  pricerequest: '0' | '1';
+  main_charges: number;
+  main_charges_unit: string;
+  parkingdetail: string;
+  custom_tag: string;
+}
+
+export interface IPropertyResponse {
+  success: boolean;
+  message: string;
+  data?: IClearPropertyDetail;
+  error?: {
+    field: string;
+    issue: string;
+  };
+}
+
+export interface IPropertyListResponse {
+  success: boolean;
+  message: string;
+  data: {
+    properties: IClearPropertyDetail[];
+    total: number;
+    page: number;
+    limit: number;
+  };
+} 
