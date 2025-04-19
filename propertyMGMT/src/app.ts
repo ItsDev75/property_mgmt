@@ -10,6 +10,8 @@ import { logger } from './utils/logger';
 import sequelize from './config/database';
 import propertyRoutes from './routes/property.routes';
 import clearPropertyRoutes from './routes/clear_property.routes';
+import commercialPropertyRoutes from './routes/commercial_property.routes';
+import commercialPropertyMainRoutes from './routes/commercial_property_main.routes';
 import { swaggerSpec } from './config/swagger';
 
 const app = express();
@@ -33,6 +35,8 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 // Routes
 app.use('/api/property', propertyRoutes);
 app.use('/api/clear-property', clearPropertyRoutes);
+app.use('/api/commercial-property', commercialPropertyRoutes);
+app.use('/api/commercial-property-main', commercialPropertyMainRoutes);
 
 // Error handling
 app.use(errorHandler);
