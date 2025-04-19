@@ -58,7 +58,12 @@ RATE_LIMIT_MAX_REQUESTS=100
 ```bash
 mysql -u your_username -p your_database < src/database/migrations/001_create_property_table.sql
 ```
-
+## Command for installing dependencies
+```bash
+npm install cors@^2.8.5 dotenv@^16.0.3 express@^4.18.2 express-rate-limit@^6.7.0 helmet@^6.0.1 joi@^17.7.0 morgan@^1.10.0 mysql2@^3.2.0 property-mgmt@file: sequelize@^6.28.0 swagger-jsdoc@^6.2.8 swagger-ui-express@^4.6.0 winston@^3.8.2 \
+@types/cors@^2.8.13 @types/express@^4.17.17 @types/helmet@^4.0.0 @types/jest@^29.4.0 @types/morgan@^1.9.4 @types/node@^18.13.0 @types/supertest@^2.0.12 @types/swagger-jsdoc@^6.0.4 @types/swagger-ui-express@^4.1.8 \
+@typescript-eslint/eslint-plugin@^5.49.0 @typescript-eslint/parser@^5.49.0 eslint@^8.32.0 jest@^29.4.1 prettier@^2.8.3 supertest@^6.3.3 ts-node-dev@^2.0.0 typescript@^4.9.5 --save-dev
+```
 ## Running the Application
 
 ### Development Mode
