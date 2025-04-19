@@ -4,9 +4,6 @@ import { PropertyController } from '../controllers/property.controller';
 const router = Router();
 const propertyController = new PropertyController();
 
-// Property routes
-
-
 router.post('/property', propertyController.createProperty.bind(propertyController));
 router.get('/property/:id', propertyController.getProperty.bind(propertyController));
 router.put('/property/:id', (req, res, next) => {
